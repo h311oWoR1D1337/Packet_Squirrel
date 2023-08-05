@@ -14,8 +14,8 @@ NETMODE NAT
 # Setting the the LED to start as Blue and flash Very Fast
 LED B VERYFAST
 
-# Setting the button to to wait indefintly for a press
-BUTTON
+# Setting the button to to wait indefintly for a press and have it not affect the LED using the enviroment variable NO_LED=1 meaning NO_LED is True  
+NO_LED=1 BUTTON
 
 # Setting up a new LED pattern after the Button has been pressed (White Fast)
 LED W FAST
