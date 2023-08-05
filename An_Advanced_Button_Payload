@@ -11,11 +11,12 @@
 # Setting the Squirrel's Network Mode to NAT
 NETMODE NAT
 
-# Setting the LED to start as Blue and flash Very Fast
-LED B VERYFAST
+# Setting the LED to start as Yellow and flash with Inverted Quintuple Blink 
+LED Y IQUIN
 
 # Setting the button to wait indefinitely for a press and have it not affect the LED using the environment variable NO_LED=1 meaning NO_LED is True  
-NO_LED=1 BUTTON
-
-# Setting up a new LED pattern after the Button has been pressed (White Fast)
-LED W FAST
+NO_LED=1 BUTTON 5 && {
+  LED C FAST
+} || { 
+  LED R VERYFAST
+}
