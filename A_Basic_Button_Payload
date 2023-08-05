@@ -2,7 +2,7 @@
 
 # Title: A Basic Demo 
 #
-# Description: A basic payload that will use the button to change the LED pattern on the PAcket Squirrel 
+# Description: A basic payload that will use the button to change the LED pattern on the Packet Squirrel 
 #
 # Author: @H311oWoR1d 
 #
@@ -11,11 +11,12 @@
 # Setting the Squirrel's Network Mode to NAT
 NETMODE NAT
 
-# Setting the the LED to start as Blue and flash Very Fast
+# Setting the LED to start as Blue and flash Very Fast
 LED B VERYFAST
 
-# Setting the button to to wait indefintly for a press and have it not affect the LED using the enviroment variable NO_LED=1 meaning NO_LED is True  
+# Setting the button to wait indefinitely for a press and have it not affect the LED using the environment variable NO_LED=1 meaning NO_LED is True  
 NO_LED=1 BUTTON
 
 # Setting up a new LED pattern after the Button has been pressed (White Fast)
 LED W FAST
+
