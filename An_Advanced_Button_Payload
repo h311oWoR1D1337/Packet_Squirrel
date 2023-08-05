@@ -14,7 +14,8 @@ NETMODE NAT
 # Setting the LED to start as Yellow and flash with Inverted Quintuple Blink 
 LED Y IQUIN
 
-# Setting the button to wait indefinitely for a press and have it not affect the LED using the environment variable NO_LED=1 meaning NO_LED is True  
+# Setting the button to wait for 5 seconds after boot-up for a press and have it not affect the LED using the environment variable NO_LED=1 meaning NO_LED is True.
+# If the button was pressed before 5 seconds the LED will flash Cyan in Fast mode. If not, then the LED will flash Red in Very Fast Mode.
 NO_LED=1 BUTTON 5 && {
   LED C FAST
 } || { 
